@@ -1,7 +1,7 @@
 FROM node:7
-WORKDIR /app1
-COPY package.json /app1
+WORKDIR /app
+COPY package.json /app
 RUN npm install
-COPY . /app1
+COPY . /app
 CMD node index.js
 EXPOSE 8081
